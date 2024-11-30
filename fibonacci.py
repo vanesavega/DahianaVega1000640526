@@ -1,7 +1,7 @@
 def saludo():
     print("¡Hola! Este programa genera y muestra los primeros números de la secuencia de Fibonacci. "
           "La secuencia de Fibonacci es una serie de números donde cada uno es la suma de los dos anteriores. "
-          "Puedes modificar el parámetro 'cantidad' para generar más o menos números de la secuencia.\n"))
+          "Puedes modificar el parámetro 'cantidad' para generar más o menos números de la secuencia.\n")
 
 def generar_fibonacci(cantidad):
     """
