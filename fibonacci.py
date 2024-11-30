@@ -1,5 +1,7 @@
 def saludo():
-    print("¡Hola! este codigo muestra los primeros 10 números de la secuencia de Fibonacci :")
+    print("¡Hola! Este programa genera y muestra los primeros números de la secuencia de Fibonacci. "
+          "La secuencia de Fibonacci es una serie de números donde cada uno es la suma de los dos anteriores. "
+          "Puedes modificar el parámetro 'cantidad' para generar más o menos números de la secuencia.\n"))
 
 def generar_fibonacci(cantidad):
     """
@@ -25,7 +27,7 @@ def main():
     saludo()
     cantidad = 20
     numeros_fibonacci = generar_fibonacci(cantidad) #se ejecuta la funcion usando como parámetro el número 20
-    print(" -> ".join(map(str, numeros_fibonacci)))  #le da formato a la salida de los datos
+    print(" --> ".join(map(str, numeros_fibonacci)))  #le da formato a la salida de los datos
 
 if __name__ == "__main__":
     main()
