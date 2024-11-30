@@ -23,7 +23,8 @@ def generar_fibonacci(cantidad):
 
 def main():
     saludo()
-    numeros_fibonacci = generar_fibonacci(20) #se ejecuta la funcion usando como parámetro el número 20
+    cantidad = 20
+    numeros_fibonacci = generar_fibonacci(cantidad) #se ejecuta la funcion usando como parámetro el número 20
     print(" -> ".join(map(str, numeros_fibonacci)))  #le da formato a la salida de los datos
 
 if __name__ == "__main__":
