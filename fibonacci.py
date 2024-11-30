@@ -9,7 +9,13 @@ def generar_fibonacci(cantidad):
     RETORNA:
         lista: Una lista con los números de la secuencia de Fibonacci.
     """
-    
+    " ----------------- validación -------------------------------------
+    if cantidad <= 0:  #validamos que  el parámetro Cantidad sea positivo y mayor que 0
+        return []  
+    if cantidad == 1:
+        return [0]  # Si solo se necesita un número, retorna [0]
+
+    " ----------------- función -------------------------------------
     fibonacci = [0, 1]  # Los dos primeros números de la secuencia
     for _ in range(2, cantidad):
         fibonacci.append(fibonacci[-1] + fibonacci[-2]) #calcula la serie de fibonacci
@@ -18,7 +24,7 @@ def generar_fibonacci(cantidad):
 def main():
     saludo()
     numeros_fibonacci = generar_fibonacci(20) #se ejecuta la funcion usando como parámetro el número 20
-    print(numeros_fibonacci) # da la serie de fibonacci hasta el número 20
+    print(" -> ".join(map(str, numeros_fibonacci)))  #le da formato a la salida de los datos
 
 if __name__ == "__main__":
     main()
